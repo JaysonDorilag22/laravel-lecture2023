@@ -38,6 +38,7 @@ class Item extends Model implements HasMedia, Searchable
               ->height(232)
               ->sharpen(10);
     }
+
     public function getSearchResult(): SearchResult
     {
        $url = route('item.show', $this->item_id);
